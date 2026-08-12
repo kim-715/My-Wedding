@@ -276,5 +276,13 @@
   </main>
 
   <script src="script.js"></script>
+  <audio id="weddingMusic" src="Wedding music.mp3" loop></audio>
+
+<script>
+document.addEventListener("click", function () {
+  const music = document.getElementById("weddingMusic");
+  music.play().catch(() => {});
+}, { once: true });
+</script>
 </body>
 </html>
